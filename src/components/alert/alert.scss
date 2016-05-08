@@ -1,0 +1,43 @@
+.root {
+  display: block;
+}
+
+.box  {
+  $normal: #eaeaea;
+  $success: #84f388;
+  $warning: #f7f092;
+  $danger: #f39287;
+
+  background-color: $normal;
+  padding: 10px;
+  color: darken($normal, 40%);
+  border: 1px solid darken($normal, 20%);
+
+  &Info {
+    background-color: $normal;
+    color: darken($normal, 40%);
+    border: 1px solid darken($normal, 20%);
+  }
+
+  &Success  {
+    background-color: $success;
+    color: darken($success, 40%);
+    border: 1px solid darken($success, 20%);
+  }
+
+  &Warning  {
+    background-color: $warning;
+    color: darken($warning, 40%);
+    border: 1px solid darken($warning, 20%);
+  }
+
+  &Danger {
+    background-color: $danger;
+    color: darken($danger, 40%);
+    border: 1px solid darken($danger, 20%);
+  }
+}
+
+.message  {
+  font-weight: bold;
+}
