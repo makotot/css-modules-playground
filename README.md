@@ -31,7 +31,7 @@
   - グローバル空間を汚染せずに`compose`でCSSモジュールを特定のセレクタに合成できる
 
 
-```css:alert.css
+```css
 /**
 * alert.css のファイル名がそのままクラス名に使われる
 *
@@ -77,7 +77,7 @@
 }
 ```
 
-```js:alert.js
+```js
 import React from 'react'
 
 // JSと同じように`import`で読み込む
@@ -140,7 +140,7 @@ export default class Alert extends React.Component {
 ```
 
 生成されるCSSファイルは以下。
-```css:alert.css
+```css
 .alert__root___1TUiw {
     display: block
 }
@@ -178,7 +178,7 @@ export default class Alert extends React.Component {
 }
 ```
 
-```html:index.html
+```html
 <div id="app">
   <div data-reactroot="">
     <div class="alert__root___1TUiw">
