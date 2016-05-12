@@ -1,14 +1,12 @@
 import React from 'react'
-
 import styles from './alert.scss'
-
 
 export default class Alert extends React.Component {
 
   static get PropTypes () {
     return {
       text: React.PropTypes.string.isRequired,
-      type: React.PropTypes.string,
+      type: React.PropTypes.string,isRequired,
     }
   }
 
@@ -43,7 +41,6 @@ export default class Alert extends React.Component {
         boxClass = `${ styles.box }`
         break
     }
-    console.log(boxClass, this.props)
     const messageClass = `${ styles.message }`
 
     return (
